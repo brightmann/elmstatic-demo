@@ -1,0 +1,10 @@
+{
+  "name": "elmstatic-demo",
+  "private": true,
+  "scripts": {
+    "build": "elmstatic build"
+  },
+  "dependencies": {
+    "elmstatic": "github:alexkorban/elmstatic"
+  }
+}
