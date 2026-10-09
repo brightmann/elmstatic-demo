@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 (function() {
   var perPage = 5;
   var list = document.getElementById('post-list');
@@ -35,3 +36,4 @@
   }
   render(1);
 })();
+});
