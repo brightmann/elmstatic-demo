@@ -2,7 +2,7 @@
   "name": "elmstatic-demo",
   "private": true,
   "scripts": {
-    "build": "elmstatic build"
+    "build": "elmstatic build && node scripts/paginate.cjs"
   },
   "dependencies": {
     "elmstatic": "github:alexkorban/elmstatic"
