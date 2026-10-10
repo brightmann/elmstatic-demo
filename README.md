@@ -15,6 +15,5 @@ tags: software other
 Your content here in Markdown.
 ```
 
-Push to `main` — Cloudflare rebuilds and deploys automatically.
 
-Live at https://elmstatic-demo.luckypoem.workers.dev
+
