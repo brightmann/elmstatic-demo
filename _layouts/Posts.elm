@@ -26,8 +26,16 @@ main =
                 ]
 
         sortPosts posts =
-            List.sortBy (\p -> ( p.date, p.link )) posts
-                |> List.reverse
+            List.sortWith
+                (\a b ->
+                    case compare b.date a.date of
+                        EQ ->
+                            compare a.link b.link
+
+                        ord ->
+                            ord
+                )
+                posts
     in
     Elmstatic.layout Elmstatic.decodePostList <|
         \content ->
