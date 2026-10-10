@@ -26,7 +26,7 @@ main =
                 ]
 
         sortPosts posts =
-            List.sortBy .date posts
+            List.sortBy (\p -> ( p.date, p.link )) posts
                 |> List.reverse
     in
     Elmstatic.layout Elmstatic.decodePostList <|
